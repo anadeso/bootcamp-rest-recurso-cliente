@@ -1,9 +1,15 @@
-# Desafio - Bootcamp Dev Superior
+# Desafio - Bootcamp Dev Superior 👩🏻‍💻
 <h1>
     <a href="https://www.baeldung.com/get-started-with-java-series">Java - API Rest</a>
 </h1>
+
+## Objetivo
 <p>Entregar um projeto Spring Boot 2.4.x contendo um CRUD completo de web services REST para acessar um recurso de clientes.
 
+## Requisitos
+Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. A especificação da entidade Client é mostrada a seguir (você deve seguir à risca os nomes de classe e atributos mostrados no diagrama):
+	
+<img width="210" alt="Captura de Tela 2021-10-01 às 7 13 42 AM" src="https://user-images.githubusercontent.com/19472198/135603659-8d4636c0-7b52-424c-b319-2670b1ffc335.png">
 
 <h4 align="center"> 
 	🚧 Em construção 🚧 

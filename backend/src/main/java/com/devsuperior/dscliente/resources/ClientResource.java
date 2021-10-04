@@ -29,4 +29,6 @@ public class ClientResource {
         ClientDto dto = clientService.findById(id);
         return ResponseEntity.ok().body(dto);
     }
+
+    
 }

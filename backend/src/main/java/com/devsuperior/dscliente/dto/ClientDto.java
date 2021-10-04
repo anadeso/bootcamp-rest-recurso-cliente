@@ -1,4 +1,4 @@
-   package com.devsuperior.dscliente.dto;
+package com.devsuperior.dscliente.dto;
 
 import com.devsuperior.dscliente.entities.Client;
 

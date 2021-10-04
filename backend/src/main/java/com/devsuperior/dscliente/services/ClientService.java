@@ -3,6 +3,7 @@ package com.devsuperior.dscliente.services;
 import com.devsuperior.dscliente.dto.ClientDto;
 import com.devsuperior.dscliente.entities.Client;
 import com.devsuperior.dscliente.repositories.ClientRepository;
+import com.devsuperior.dscliente.services.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -32,9 +33,7 @@ public class ClientService {
     @Transactional(readOnly = true)
     public ClientDto findById(Long id) {
         Optional<Client> objEntity = clientRepository.findById(id);
-        Client entity = objEntity.get();
+        Client entity = objEntity.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
         return new ClientDto(entity);
     }
-
-
 }

@@ -17,8 +17,8 @@ Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. 
 
 ### Features
 
-- [ ] Inserir novo recurso
-- [ ] Busca de recurso por id
+- [x] Inserir novo recurso
+- [x] Busca de recurso por id
 - [ ] Atualizar recurso
 - [ ] Deletar recurso
 - [ ] Busca paginada de recursos

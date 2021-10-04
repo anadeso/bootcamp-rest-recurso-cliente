@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -34,6 +35,17 @@ public class ClientService {
     public ClientDto findById(Long id) {
         Optional<Client> objEntity = clientRepository.findById(id);
         Client entity = objEntity.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
+        return new ClientDto(entity);
+    }
+
+    @Transactional
+    public ClientDto insert(ClientDto dto) {
+        Client entity = new Client();
+        entity.setName(dto.getName());
+        entity.setCpf(dto.getCpf());
+        entity.setIncome(dto.getIncome());
+        entity.setBirthDate(dto.getBirthDate());
+        entity.setChildren(dto.getChildren());
         return new ClientDto(entity);
     }
 }

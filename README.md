@@ -19,6 +19,7 @@ Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. 
 
 - [x] Inserir novo recurso
 - [x] Busca de recurso por id
+- [ ] Tratamento de exceções
 - [ ] Atualizar recurso
 - [ ] Deletar recurso
 - [ ] Busca paginada de recursos

@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -27,4 +28,13 @@ public class ClientService {
                         .collect(Collectors.toList());
         return listDto;
     }
+
+    @Transactional(readOnly = true)
+    public ClientDto findById(Long id) {
+        Optional<Client> objEntity = clientRepository.findById(id);
+        Client entity = objEntity.get();
+        return new ClientDto(entity);
+    }
+
+
 }

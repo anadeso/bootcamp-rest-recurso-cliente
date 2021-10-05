@@ -2,7 +2,6 @@ package com.devsuperior.dscliente.resources;
 
 import com.devsuperior.dscliente.dto.ClientDto;
 import com.devsuperior.dscliente.services.ClientService;
-import jdk.jfr.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -45,4 +44,9 @@ public class ClientResource {
         return ResponseEntity.ok().body(dto);
     }
 
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<Void> delete(@PathVariable Long id) {
+        clientService.delete(id);
+        return ResponseEntity.noContent().build();
+    }
 }

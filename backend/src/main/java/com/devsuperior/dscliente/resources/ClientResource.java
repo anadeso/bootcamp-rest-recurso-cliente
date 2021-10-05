@@ -2,6 +2,7 @@ package com.devsuperior.dscliente.resources;
 
 import com.devsuperior.dscliente.dto.ClientDto;
 import com.devsuperior.dscliente.services.ClientService;
+import jdk.jfr.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -37,4 +38,11 @@ public class ClientResource {
 
         return ResponseEntity.created(uri).body(dto);
     }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<ClientDto> update(@PathVariable Long id, @RequestBody ClientDto dto) {
+        dto = clientService.update(id, dto);
+        return ResponseEntity.ok().body(dto);
+    }
+
 }

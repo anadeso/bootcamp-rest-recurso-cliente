@@ -25,6 +25,15 @@ Um cliente possui nome, CPF, renda, data de nascimento, e quantidade de filhos. 
 - [x] Busca paginada de recursos
 
 ### Resultado
+<img width="760" alt="Captura de Tela 2021-10-04 às 10 05 15 PM" src="https://user-images.githubusercontent.com/19472198/135944580-324adbec-3f2e-4f2e-9f0e-3d371b52a619.png">
+
+<img width="771" alt="Captura de Tela 2021-10-04 às 10 05 47 PM" src="https://user-images.githubusercontent.com/19472198/135944620-0345aa78-2b5b-47b2-a852-f0064ef585d6.png">
+
+<img width="759" alt="Captura de Tela 2021-10-04 às 10 06 33 PM" src="https://user-images.githubusercontent.com/19472198/135944668-ebe0d338-cd4e-4ec8-be0c-447b23d6d6d1.png">
+
+<img width="765" alt="Captura de Tela 2021-10-04 às 10 10 42 PM" src="https://user-images.githubusercontent.com/19472198/135945009-58fcff8a-e0b9-4a23-b819-86a83ca25c46.png">
+
+<img width="762" alt="Captura de Tela 2021-10-04 às 10 11 56 PM" src="https://user-images.githubusercontent.com/19472198/135945089-4fa6463d-dcf5-45ad-8031-377f65fde33d.png">
 
 
 ### Pré-requisitos
